@@ -82,6 +82,11 @@ section {
     color: #000;
 }
 
+.navbar__menu .menu__link.active-link {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
 .navbar__menu .menu__link:hover {
     background: #333;
     color: #fff;
@@ -207,7 +212,37 @@ section.your-active-class .landing__container::after {
     opacity: 1;
     animation: rotate 5s linear 0s infinite forwards reverse;
 }
-
+.scroll-to-top{
+    color: #fff;
+    text-decoration: none;
+    width: 3rem;
+    height: 3rem;
+    background-color: #cc1;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.25s ease-in-out;
+    opacity: 0;
+}
+.scroll-to-top--active{
+    opacity: 1;
+}
+.scroll-to-top:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.25);
+}
+.scroll-to-top__icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(90deg);
+    fill: rgba(0,13,60,1);
+    transition: all 0.25s ease-in-out;
+}
 /* Section Active Styles Keyframe Animations */
 @keyframes rotate {
 	from {
